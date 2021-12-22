@@ -2,7 +2,7 @@ package sistemaDeArchivos;
 
 import java.util.Date;
 
-public class Archive extends SistemaDeArchivos {
+public class Archive extends FileSystem {
 	private String name;
 	private int peso;
 	
@@ -65,7 +65,7 @@ public class Archive extends SistemaDeArchivos {
 
 
 	@Override
-	public SistemaDeArchivos oldestElement() {
+	public FileSystem oldestElement() {
 		// TODO Auto-generated method stub
 		return this;
 	}

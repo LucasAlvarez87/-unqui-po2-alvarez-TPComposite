@@ -16,11 +16,11 @@ public interface FyleSystem {
 	/*
 	 * Elemento mas nuevo
 	 */
-	public SistemaDeArchivos lastModified();
+	public FileSystem lastModified();
 	
 	/*
 	 * Elemento mas antiguo
 	 */
-	public SistemaDeArchivos oldestElement();
+	public FileSystem oldestElement();
 
 }

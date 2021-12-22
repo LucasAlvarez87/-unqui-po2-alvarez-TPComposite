@@ -2,7 +2,7 @@ package sistemaDeArchivos;
 
 import java.util.Date;
 
-public abstract class SistemaDeArchivos implements FyleSystem {
+public abstract class FileSystem implements FyleSystem {
 	
 	private int orden;
 	private Date ultimaModificacion;
@@ -15,7 +15,7 @@ public abstract class SistemaDeArchivos implements FyleSystem {
 		this.orden = orden;
 	}
 
-	public SistemaDeArchivos() {
+	public FileSystem() {
 		super();
 		this.orden = 1;
 		this.ultimaModificacion = new Date();
@@ -28,10 +28,10 @@ public abstract class SistemaDeArchivos implements FyleSystem {
 	public abstract void printStructure();
 
 	@Override
-	public abstract SistemaDeArchivos lastModified();
+	public abstract FileSystem lastModified();
 
 	@Override
-	public abstract SistemaDeArchivos oldestElement();
+	public abstract FileSystem oldestElement();
 
 	public Date getUltimaModificacion() {
 		return ultimaModificacion;
